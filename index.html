@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+		<title>PermaFrost: The Game</title>
+
+
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		      <script>
+					// device detection
+					if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			 // some code..
+
+	window.location.pathname = 'mobileIndex.html'
+	}
+		      </script>
+	</head>
+	<body>
+
+
+		<div id="mainSec" class="mainSec">
+		<!--	<video class="videoInsert" preload="preload" autoplay="autoplay" loop="loop" muted="muted">
+				<source src="media/bg.mp4" type="video/mp4"></source>
+			</video>
+			<div class="caption">-->
+			<img src="media/ice.gif" id="gifImg"/>
+			<div class="bigBlock">
+				<div class="inner">
+				<img src="media/logo.png" style="margin-bottom:100px;margin-top:50px;opacity:0.55 width:300px; height:380px;"><br>
+
+
+
+				<a style="top:0px;" href="game.exe" class="dlBtn">DOWNLOAD</a>
+				</div>
+				<p class="navMenu" ><a href="#aboutSec"><span class="navAbout">About</span></a> | <a href="#mediaSec"><span class="navMedia">Media</span></a><br><br>
+				<span class="navInfo">Something about the game!</span></p>
+
+		</div>
+		</div>
+
+		<div id="aboutSec" class="aboutSec">
+			<div class="caption">
+				<div class="coolbanner">
+				<h3 style="text-align:center;">About PermaFrost</h3>
+				<p>Learn more about the the game from the video below!</p>
+</div>
+
+				<embed fullscreen="true" preload="auto" src="media/bg.mp4" autostart="false" height="100%" width="100%" />
+			</div>
+</div>
+</div>
+
+		<div class="infoBars">
+			<p>Random text idk</p>
+		</div>
+
+		<div id="mediaSec" class="mediaSec">
+			<div class="caption">
+				<div class="coolbanner">
+				<h3 style="text-align:center;">MEDIA / CONCEPT ART</h3>
+				<p>Images and text from the game etc</p>
+			</div>
+			</div>
+			<div class="flexibleBox">
+			  <div class="expImg">
+			    <img src="media/testimg.jpg" >
+			    <h3 style="color:white;">Some Text</h3>
+			  </div>
+				<div class="expImg">
+				 <img src="media/testimg.jpg" >
+				 <h3 style="color:white;">Some Text</h3>
+			 </div>
+			 <div class="expImg">
+				 <img src="media/testimg.jpg" >
+				 <h3 style="color:white;">Some Text</h3>
+			 </div>
+			 <div class="expImg">
+				 <img src="media/testimg.jpg" >
+				 <h3 style="color:white;">Some Text</h3>
+			 </div>
+			</div>
+
+
+
+
+		</div>
+
+		<div class="infoBars">
+			<p><center>About our team and usefull links!</center></p>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Top button">▲</button>
+		<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+
+
+		</script>
+
+
+	</body>
+</html>
