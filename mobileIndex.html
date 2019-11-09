@@ -9,76 +9,97 @@
 
 
 
-		<div id="aboutSec" class="aboutSec">
-			<div class="caption">
-				<div class="coolbanner">
-				<h3 style="text-align:center;">About PermaFrost</h3>
-				<p>Learn more about the the game from the video below!</p>
+		<img src="media/ice.gif" id="gifImg"/>
+		<div class="bigBlock">
+			<div class="inner">
+			<img src="media/logo.png" style="margin-bottom:100px;margin-top:50px;opacity:0.55 width:300px; height:380px;"><br>
+			<a style="top:0px;" href="https://github.com/JR-Morgan/TeamProject-Game/releases" class="dlBtn">DOWNLOAD</a>
+			</div>
+			<div class="navMenu" ><a href="#aboutSec"><span class="navAbout">About</span></a> | <a href="#mediaSec"><span class="navMedia">Media</span></a><br><br>
+			<p style="color:white;">Permafrost: A story generated strategy game, where survival is key from various obstacles using only limited resources!</p>
+	</div>
+	</div>
+</div>
+
+	<div id="aboutSec" class="aboutSec">
+		<div class="caption">
+			<div class="coolbanner">
+			<h3 style="text-align:center;">About PermaFrost</h3>
+			<p>Learn more about the the game from the video below!</p>
+</div>
+
+			<embed fullscreen="true" preload="none" src="media/bg.mp4" autostart="0" height="100%" width="100%" />
+		</div>
+</div>
+</div>
+
+	<div class="infoBars">
+		<p>Random text idk</p>
 	</div>
 
-				<embed fullscreen="true" preload="auto" src="media/bg.mp4" autostart="false" height="100%" width="100%" />
+	<div id="mediaSec" class="mediaSec">
+		<div class="caption">
+			<div class="coolbanner">
+			<h3 style="text-align:center;">MEDIA / CONCEPT ART</h3>
+			<p>Images and text from the game</p>
+		</div>
+		</div>
+		<div class="flexibleBox">
+			<div class="expImg">
+				<img src="media/Concept-Art1.png"  >
+				<h3 style="color:white; font-size: 14px" >The Cross breed between a human and a jaguar, is a big fish in the kingdom. Surviving against it's ferocius attacks will be not be easy to survive against.</h3>
 			</div>
+			<div class="expImg">
+			 <img src="media/Concept-Art2.png" >
+			 <h3 style="color:white; font-size: 14px" >Sibearian Tigers can attack anytime during the gameplay, be sure to keep an eye out this creature! otherwise...</h3>
+		 </div>
+		 <div class="expImg">
+			 <img src="media/Concept-Art3.png">
+			 <h3 style="color:white;font-size: 14px; margin:10px;">Venomous Creatures are always on the hunt. Be sure to not let them stand a chance against you're tactics.</h3>
+								</div>
+								<div class="expImg">
+			 <img src="media/Concept-Art4.png">
+			 <h3 style="color:white;font-size: 14px">Choose you're character wisely and be the hero!</h3>
 	</div>
+	<div class="expImg">
+<img src="media/Concept-Art4.png">
+<h3 style="color:white;font-size: 14px">Choose you're character wisely and be the hero!</h3>
+</div>
+<div class="expImg">
+<img src="media/Concept-Art4.png">
+<h3 style="color:white;font-size: 14px">Choose you're character wisely and be the hero!</h3>
+</div>
+	<div class="footer">
+		<p>About our team and usefull links!</p>
 	</div>
+</div>
 
-		<div class="infoBars">
-			<p>Random text idk</p>
-		</div>
 
-		<div id="mediaSec" class="mediaSec">
-			<div class="caption">
-				<div class="coolbanner">
-				<h3 style="text-align:center;">MEDIA / CONCEPT ART</h3>
-				<p>Images and text from the game etc</p>
-			</div>
-			</div>
-			<div class="flexibleBox">
-			  <div class="expImg">
-			    <img src="media/Concept-Art1.png" style="width: 400px; height: 400px" >
-			    <h3 style="color:white; font-size: 14px" >The Cross breed between a human and a jaguar, is a big fish in the kingdom. Surviving against it's ferocius attacks will be not be easy to survive against.</h3>
-			  </div>
-				<div class="expImg">
-				 <img src="media/Concept-Art2.png" style="width: 400px; height: 400px">
-				 <h3 style="color:white; font-size: 14px" >Sibearian Tigers can attack anytime during the gameplay, be sure to keep an eye out this creature! otherwise...</h3>
-			 </div>
-			 <div class="expImg">
-				 <img src="media/Concept-Art3.png" style="width: 400px; height: 400px">
-				 <h3 style="color:white;font-size: 14px">Venomous Creatures are always on the hunt. Be sure to not let them stand a chance against you're tactics.</h3>
-                 	</div>
-                  <div class="expImg">
-				 <img src="media/Concept-Art4.png" style="width: 400px; height: 400px">
-				 <h3 style="color:white;font-size: 14px">Choose you're character wisely and be the hero!</h3>
+	<button onclick="topFunction()" id="myBtn" title="Top button">▲</button>
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
 
-		</div>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
 
-		<div class="infoBars">
-			<p><center>About our team and usefull links!</center></p>
-		</div>
-		<button onclick="topFunction()" id="myBtn" title="Top button">▲</button>
-		<script>
-		//Get the button
-		var mybutton = document.getElementById("myBtn");
-
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-
-		function scrollFunction() {
-			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				mybutton.style.display = "block";
-			} else {
-				mybutton.style.display = "none";
-			}
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
 		}
+	}
 
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-
-
-		</script>
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
 
 
-	</body>
-	</html>
+	</script>
+
+
+</body>
+</html>
