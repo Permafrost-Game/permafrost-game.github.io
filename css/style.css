@@ -1,74 +1,75 @@
-body, html {
+body, html
+{
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 15px/1.8 "Lato";
   color: #777;
   scroll-behavior: smooth;
 }
 
-.mainSec, .mediaSec, .aboutSec {
+.mainSec, .mediaSec, .aboutSec
+{
   position: relative;
   opacity: 0.8;
   background-position: center;
   background-size:contain;
-
 }
-.bigBlock{
+
+.bigBlock
+{
   text-align: center;
-
 }
-.inner{
+
+.inner
+{
   display:inline-block;
   height:100%;
 }
 
-#gifImg {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background-size: cover;
-    overflow: hidden;
+#gifImg
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
 }
 
-a {
-	text-decoration:none;
+a
+{
+  text-decoration:none;
 }
 
-h3 {
+h3
+{
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 20px "Lato";
   color: #111;
 }
 
-.mainSec {
-	min-height: 100%;
+.mainSec
+{
+  min-height: 100%;
 }
 
-.mediaSec {
-	min-height: 85%;
+.mediaSec
+{
+  min-height: 85%;
 }
 
-.aboutSec {
-	min-height: 85%;
+.aboutSec
+{
+  min-height: 85%;
 }
 
-.infoBars {
-	position:relative;
-	color:#ddd;
-	background-color:#282E34;
-	text-align:center;
-	padding:30px;
-	text-align: justify;
-  margin-top:
-}
-
-.caption {
+.caption
+{
   position: absolute;
   left: 0;
   top: 5%;
@@ -77,159 +78,169 @@ h3 {
   color: #000;
   height:100%;
 }
-.footer{
+
+.footer
+{
   position:relative;
   margin-top:2%;
   bottom:0;
   width:100%;
-  left:0px;
+  left:0;
   background-color:black;
-  text-align: center;
 }
 
-@-webkit-keyframes bluePulse {
+.footer p
+{
+  margin-left: 5%;
+}
+
+@-webkit-keyframes bluePulse
+{
   from {color:white; background-color: rgb(15, 105, 172,0.4); -webkit-box-shadow: 0 0 9px #7FC2F3;}
 
-to { background-color:rgb(9, 142, 179,0.8); -webkit-box-shadow: 0 0 18px white; }
+  to { background-color:rgb(9, 142, 179,0.8); -webkit-box-shadow: 0 0 18px white; }
 }
- /*background-color: rgb(25, 187, 231,0.4);  -webkit-box-shadow: 0 0 9px #7FC2F3;*/
+/*background-color: rgb(25, 187, 231,0.4);  -webkit-box-shadow: 0 0 9px #7FC2F3;*/
 
-a.dlBtn{
+a.downloadButton
+{
   -webkit-animation-name: bluePulse;
   -webkit-animation-duration: 3s;
   -webkit-animation-direction:alternate;
   -webkit-animation-iteration-count: infinite;
   position: relative;
-	display: inline-block;
+  display: inline-block;
   bottom:90px;
-	padding: 15px 25px;
-	background-color: rgb(15, 105, 172,0,4); /*for compatibility with older browsers*/
-	background-image: linear-gradient(lightblue,blue;)
+  margin-top: 35px;
+  padding: 15px 25px;
+  background-image: linear-gradient(lightblue,blue;);
+  /*for compatibility with older browsers*/
+  background-color: rgb(15, 105, 172,0,4);
 
   text-decoration: none;
-	color: #fff;
-	font-size: 25px;
-	font-family: sans-serif;
-	font-weight: 100;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Lato";
+  font-weight: 100;
   border-top-style: hidden;
   box-shadow: 0px 1px 4px -2px #333;
   text-shadow: 0px -1px #333;
   border-radius:20px;
 }
 
-.coolbanner{
+.coolbanner
+{
   color: rgba(0, 0, 0, 0.72);
-    text-decoration: none;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 #ffffff;
-    box-shadow:
-      2px 2px 0.5em rgba(122, 122, 122, 0.55),
-      inset 1px 1px 0 rgba(255, 255, 255, 0.9),
-      inset -1px -1px 0 rgba(0, 0, 0, 0.5)
-    ;
-    border: 1px solid #cacade;
-    background:
-      -moz-linear-gradient(
-      -72deg,
-      #dedeff,
-      #ffffff 16%,
-      #dedeff 21%,
-      #ffffff 24%,
-      #555564 27%,
-      #dedeff 36%,
-      #ffffff 45%,
-      #ffffff 60%,
-      #dedeff 72%,
-      #ffffff 80%,
-      #dedeff 84%,
-      #555564
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #ffffff;
+  box-shadow:
+  2px 2px 0.5em rgba(122, 122, 122, 0.55),
+  inset 1px 1px 0 rgba(255, 255, 255, 0.9),
+  inset -1px -1px 0 rgba(0, 0, 0, 0.5)
+  ;
+  border: 1px solid #cacade;
+  background:
+  -moz-linear-gradient(
+    -72deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 27%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
     );
-    background:
-    -webkit-linear-gradient(
-      -72deg,
-      #dedeff,
-      #ffffff 16%,
-      #dedeff 21%,
-      #ffffff 24%,
-      #555564 27%,
-      #dedeff 36%,
-      #ffffff 45%,
-      #ffffff 60%,
-      #dedeff 72%,
-      #ffffff 80%,
-      #dedeff 84%,
-      #555564
+  background:
+  -webkit-linear-gradient(
+    -72deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 27%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
     );
-    background:
-    -o-linear-gradient(
-      -72deg,
-      #dedeff,
-      #ffffff 16%,
-      #dedeff 21%,
-      #ffffff 24%,
-      #555564 27%,
-      #dedeff 36%,
-      #ffffff 45%,
-      #ffffff 60%,
-      #dedeff 72%,
-      #ffffff 80%,
-      #dedeff 84%,
-      #555564
+  background:
+  -o-linear-gradient(
+    -72deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 27%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
     );
-    background:
-    linear-gradient(
-      -72deg,
-      #dedeff,
-      #ffffff 16%,
-      #dedeff 21%,
-      #ffffff 24%,
-      #555564 27%,
-      #dedeff 36%,
-      #ffffff 45%,
-      #ffffff 60%,
-      #dedeff 72%,
-      #ffffff 80%,
-      #dedeff 84%,
-      #555564
+  background:
+  linear-gradient(
+    -72deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 27%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
     );
+  }
+
+.caption a.downloadButton:hover
+{
+    background: linear-gradient(white,#00DCEE);
 }
 
-
-
-
-
-
-
-
-.caption a.dlBtn:hover{
-  background: linear-gradient(white,#00DCEE);
-}
-.caption{
+.caption
+{
   height:100%;
   top:0px;
 }
 
-
-
-.navMenu {
+.navMenu
+{
   position:absolute;
   bottom:0;
-  width:99.7%;
-  height:100px;
-	font: 20px "Lato", sans-serif;
+  right: 0;
+  width:100%;
+  height: 6%;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font: 20px "Lato";
   border-style: solid;
   border-color: white;
-  margin-bottom:0px;
-background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
-
-
+  border-right-style: none;
+  background-image: linear-gradient(90deg, black 25%, #04619f, black 75%);
 }
 
-.navAbout {
-	color: rgb(255, 255, 255);
-	font: 20px "Lato", sans-serif;
+.navAbout, .navMedia, .navMenu p
+{
+  color: white;
+  font: 20px "Lato";
 }
-.navAbout:hover{
+
+.navAbout:hover
+{
   padding:5px;
   padding-top: 2px;
   background-color: rgb(0,255,255,0.4);
@@ -239,17 +250,10 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
   cursor: pointer;
   text-decoration: underline;
   border-radius:4px;
-
-
 }
 
-.navMedia {
-	color: rgb(255, 255, 255);
-	font: 20px "Lato", sans-serif;
-}
-
-
-.navMedia:hover{
+.navMedia:hover
+{
   padding:5px;
   padding-top: 2px;
   background-color: rgb(0,255,255,0.4);
@@ -261,7 +265,8 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
   border-radius:4px;
 }
 
-#myBtn {
+#myBtn
+{
   display: none;
   position: fixed;
   bottom: 20px;
@@ -277,13 +282,14 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
   border-radius: 50px;
 }
 
-#myBtn:hover {
+#myBtn:hover
+{
   background-color: #555;
 }
 
-
-.flexibleBox{
-justify-content: center;
+.flexibleBox
+{
+  justify-content: center;
   background-color: rgba(11, 24, 43,0.8);
   width:100%;
   height:90%;
@@ -293,22 +299,51 @@ justify-content: center;
   z-index: -1;
 }
 
-.expImg>img{
+.expImg>img
+{
   width:100%;
   height:100%;
   object-fit:contain;
   border-style: groove;
 }
 
-.expImg{
+.expImg
+{
   padding:5px;
   width:40%;
   height:40%;
 }
 
-
-@media screen and (max-width: 600px) {
-  .expImg{
-width:100%;
+@media screen and (max-width: 600px)
+{
+  .expImg
+  {
+    width:100%;
   }
+}
+
+.pitchVideo
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.pitchVideo iframe{
+  position: relative;
+  width: 45%;
+  height: 55%;
+  top: 15%;
+}
+
+.infoBars
+{
+  position: relative;
+  color:#ddd;
+  background-color:#282E34;
+  text-align:center;
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
 }
