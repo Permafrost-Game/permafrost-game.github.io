@@ -26,17 +26,14 @@ body, html
   height:100%;
 }
 
-#gifImg
+#mainImg
 {
   position: absolute;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  height:100%;
+  width:100%;
   z-index: -100;
-  background-size: cover;
   overflow: hidden;
 }
 
@@ -96,9 +93,9 @@ h3
 
 @-webkit-keyframes bluePulse
 {
-  from {color:white; background-color: rgb(15, 105, 172,0.4); -webkit-box-shadow: 0 0 9px #7FC2F3;}
+  from {color:white; background-color: rgb(30, 30, 30,0.4); -webkit-box-shadow: 0 0 9px #7FC2F3;}
 
-  to { background-color:rgb(9, 142, 179,0.8); -webkit-box-shadow: 0 0 18px white; }
+  to { background-color:rgb(200, 200, 200,0.8); -webkit-box-shadow: 0 0 18px white; }
 }
 /*background-color: rgb(25, 187, 231,0.4);  -webkit-box-shadow: 0 0 9px #7FC2F3;*/
 
@@ -113,7 +110,7 @@ a.downloadButton
   bottom:90px;
   margin-top: 35px;
   padding: 15px 25px;
-  background-image: linear-gradient(lightblue,blue;);
+  background-image: linear-gradient(lightblue,gray;);
   /*for compatibility with older browsers*/
   background-color: rgb(15, 105, 172,0,4);
 
@@ -206,9 +203,9 @@ a.downloadButton
     );
   }
 
-.caption a.downloadButton:hover
+a.downloadButton:hover
 {
-    background: linear-gradient(white,#00DCEE);
+  background: radial-gradient(circle, rgba(106,186,221,1) 0%, rgba(21,23,27,1) 100%);
 }
 
 .caption
@@ -286,6 +283,8 @@ a.downloadButton
 {
   background-color: #555;
 }
+
+
 
 .flexibleBox
 {
