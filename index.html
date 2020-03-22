@@ -11,28 +11,42 @@
 			{
 				window.location.pathname = 'TeamProject-game-website/mobileIndex.html';
 			}
+			var gallery = document.getElementById("gallery");
+			var imgs = gallery.children;
+
+			var modal = document.getElementById("modal");
+			var modal_img = modal.children[0];
+
+			for (var i = 0; i < imgs.length; i++) {
+			  imgs[i].onclick = function() {
+				modal_img.src = this.src;
+				modal.classList.add("show");
+			  }
+			}
+
+			// Close when clicking anywhere on modal not on img
+			modal.onclick = function(e) {
+			  if (e.target !== this)
+				return;
+				
+			  modal.classList.remove("show");
+}
 		</script>
 	</head>
 
 	<body>
-		<div id="mainSec" class="mainSec">
-			<img src="media/backgroundImg.jpg" id="mainImg"/>
-			<div class="bigBlock">
-				<div class="inner">
-
-					<img src="media/logo.png" style="margin-bottom:100px;margin-top:50px;opacity:0.55; width:40%; height:45%;">
-
-					<a style="top:0px;" href="https://github.com/JR-Morgan/TeamProject-Game/releases" class="downloadButton">DOWNLOAD</a>
-				</div>
-				<div class="navMenu" >
-					<a href="#aboutSec">
-						<span class="navAbout">About</span></a> | <a href="#mediaSec"><span class="navMedia">Media</span> | <a href="blog.html"><span class="navMedia">DevBlog</span>
-					</a>
-					<p>Permafrost - a Post-Apocalyptic Colony Survival Sim</p>
+		<div class="navMenu">
+			<img src="media/menulogo.png" width=30 height=30 style="float: left; padding: 14px 5px;"><a href='#aboutSec'><span class="navAbout">About</span></a><a href="#mediaSec"><span class="navMedia">Media</span></a><a href="wiki.html"><span class="navWiki">Wiki</span></a><a href="blog.html"><span class="navBlog">DevBlog</span></a>				
+		</div>
+		<div class="mainSec">
+			<div class="caption">
+				<div class="mainBanner">
+					<img src="media/logo.png" style="margin-bottom:100px;margin-top:50px;opacity:0.90; width:30%; height:35%;">
+					<br><a style="position: relative;display: inline-block;bottom:90px;margin-top: 120px;padding: 15px 25px;" href="https://github.com/Permafrost-Game/Permafrost/releases/download/v0.3.1/Release.zip" class="downloadButton">DOWNLOAD</a><br>
+					<p style="position: relative;display: inline-block;bottom:90px;margin-top: -5px;padding: 15px 25px;">Download <a onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';" href='https://github.com/Permafrost-Game/Permafrost/archive/develop.zip'>source code</a></p>
 				</div>
 			</div>
 		</div>
-
 		<div id="aboutSec" class="aboutSec">
 			<div class="caption">
 				<div class="coolbanner">
@@ -40,14 +54,7 @@
 					<p>Learn more about our game below!</p>
 				</div>
 				<div class="pitchVideo">
-					<iframe
-						width="560"
-						height="315"
-						src="https://www.youtube.com/embed/6CqFHRCs1aw"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen>
-					</iframe>
+					<iframe src="https://www.youtube.com/embed/6CqFHRCs1aw?rel=0&amp;autoplay=1&mute=1&modestbranding=1&autohide=1&showinfo=0&controls=0&loop=1&playlist=6CqFHRCs1aw" width="560" height="315" frameborder="0"></iframe>
 				</div>
 			</div>
 		</div>
@@ -64,38 +71,32 @@
 				</div>
 			</div>
 			<div class="flexibleBox">
-				<div class="expImg">
-					<img src="media/Characters.jpg">
-					<h3 style="color:white; font-size: 14px">Our initial cast of survivors. These intrepid souls will have to face this brave new world head on if they wish to undo Humanity's mistake.</h3>
-				</div>
-				<div class="expImg">
-					<img src="media/Tower.jpg" >
-					<h3 style="color:white; font-size: 14px">A Cooling Tower. These structures, once weaponized by the rogue A.I, will prove to be the key to it's undoing.. and your survival.</h3>
-				</div>
-				<div class="expImg">
-					<img src="media/Smilodon.jpg">
-					<h3 style="color:white; font-size: 14px">A Smilodon. These mighty predators once reigned supreme, but climate change and human hunting had led to their extinction. It's only fitting that they would now find their way back into the food chain..</h3>
-				</div>
-				<div class="expImg">
-					<img src="media/Control Center.jpg">
-					<h3 style="color:white; font-size: 14px">A Control Tower. These derelict buildings once had a direct line to all Satellites orbitting the Earth. Anyone stumbling into one of these structures ought to be wise enough to make use of them.</h3>
-				</div>
-				<div class="expImg">
-					<img src="media/Hybrid.jpg">
-					<h3 style="color:white; font-size: 14px">An unfortunate soul turned into an abomination; a result of one of the rogue A.I's experiments.</h3>
-				</div>
-				<div class="expImg">
-					<img src="media/Venom.jpg">
-					<h3 style="color:white; font-size: 14px">Who knows what hell spawned this abominable monstrosity..</h3>
+				<div class="row">
+					<div class="column">
+						<u><h1 style="color: white;margin-bottom: -20px; margin-top: 5px;">Media/Concept Art</h1></u><br>
+						<p style="color: white;">Here you can find a small collection of concept art used in our game!<br>These are just concept art sketches and may not reflect on the exact assets which will be in the game after release!<br><br>Artwork made by our artist <u><b>Ajay</b></u></p>
+					</div>
+					<div class="column">
+						<img src="media/Smilodon.jpg">
+						<img src="media/Tower.jpg">
+					</div>
+					<div class="column">
+						<img src="media/Venom.jpg">
+						<img src="media/ControlCenter.jpg">
+					</div>
+					<div class="column">
+						<img src="media/Hybrid.jpg">
+						<img src="media/Characters.jpg">
+					</div>
 				</div>
 				<div class="footer">
-					<p>Useful Links:</p>
+					<p>Copyright &copy; Permafrost 2020</p>
 				</div>
 			</div>
 		</div>
 
 		<button onclick="topFunction()" id="myBtn" title="Top button">▲</button>
-		<script>
+		<script>		
 			//Get the button
 			var mybutton = document.getElementById("myBtn");
 
