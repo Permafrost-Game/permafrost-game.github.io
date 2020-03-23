@@ -1,3 +1,8 @@
+@font-face{
+  font-family: "Lato";
+  src: url("css/Lato.ttf") format("truetype");
+}
+
 body, html
 {
   height: 100%;
@@ -10,7 +15,7 @@ body, html
 .mainSec, .mediaSec, .aboutSec
 {
   position: relative;
-  opacity: 0.8;
+  opacity: 1;
   background-position: center;
   background-size:contain;
 }
@@ -216,50 +221,30 @@ a.downloadButton:hover
 
 .navMenu
 {
-  position:absolute;
-  bottom:0;
-  right: 0;
-  width:100%;
-  height: 6%;
-  padding-top: 15px;
-  padding-bottom: 30px;
-  font: 20px "Lato";
-  border-style: solid;
-  border-color: white;
-  border-right-style: none;
-  background-image: linear-gradient(90deg, black 25%, #04619f, black 75%);
+	overflow: hidden;
+	background-color: #333;
 }
 
-.navAbout, .navMedia, .navMenu p
+.navMenu a {
+  float: left;
+  color: #00C4FF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navMenu a:hover {
+  background-color: #00D1FF;
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.navAbout, .navMedia, .navBlog, .navWiki, .navMenu p
 {
   color: white;
   font: 20px "Lato";
-}
-
-.navAbout:hover
-{
-  padding:5px;
-  padding-top: 2px;
-  background-color: rgb(0,255,255,0.4);
-  background-radius:10px;
-  background-blend-mode: lighten;
-  color:white;
-  cursor: pointer;
-  text-decoration: underline;
-  border-radius:4px;
-}
-
-.navMedia:hover
-{
-  padding:5px;
-  padding-top: 2px;
-  background-color: rgb(0,255,255,0.4);
-  border-radius:10px;
-  background-blend-mode: lighten;
-  color:white;
-  cursor: pointer;
-  text-decoration: underline;
-  border-radius:4px;
 }
 
 #myBtn
@@ -284,15 +269,13 @@ a.downloadButton:hover
   background-color: #555;
 }
 
-
-
 .flexibleBox
 {
   justify-content: center;
   background-color: rgba(11, 24, 43,0.8);
   width:100%;
   height:90%;
-  padding-top: 10%;
+  padding-top: 7%;
   display:flex;
   flex-wrap: wrap;
   z-index: -1;
@@ -321,6 +304,15 @@ a.downloadButton:hover
   }
 }
 
+.mainBanner
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../media/backgroundImg.jpg"); 
+  background-size: 100% 100%;
+}
+
 .pitchVideo
 {
   position: absolute;
@@ -331,9 +323,8 @@ a.downloadButton:hover
 
 .pitchVideo iframe{
   position: relative;
-  width: 45%;
-  height: 55%;
-  top: 15%;
+  width: 100%;
+  height: 92%;
 }
 
 .infoBars
@@ -342,7 +333,38 @@ a.downloadButton:hover
   color:#ddd;
   background-color:#282E34;
   text-align:center;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   font-size: 18px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 10px;
+}
+
+.column img {
+  margin-top: 15px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
