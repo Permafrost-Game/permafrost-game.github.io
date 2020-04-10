@@ -344,8 +344,8 @@ a.downloadButton:hover
 }
 
 .column {
-  flex: 20%;
-  max-width: 20%;
+  flex: 15%;
+  max-width: 15%;
   padding: 0 10px;
 }
 
