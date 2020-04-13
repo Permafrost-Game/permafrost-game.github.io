@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--Head-->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Permafrost - Mechanics Wikipedia</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="wrapAll clearfix">
+      <!--Sidebar-->
+			<div class="sidebar">
+				<div class="logo">
+					<a href="/"><img src='img/logo.png' alt="logo"></a>
+				</div>
+        <!--Navigation-->
+				<div class="navigation">
+					<ul>
+						<li><a href="../wiki.html">Main page</a></li>
+						<li><a href="interactibles.html">Interactibles</a></li>
+            <li><a href="mechanics.html">Game mechanics</a></li>
+						<li><a href="installation.html">Installation</a></li>
+						<li><a href="#">Game Settings</a></li><br>
+						<li><a href="../index.html">< Main Site</a></li>
+					</ul>
+				</div>
+			</div>
+      <!--Main-->
+			<div class="mainsection">
+				<div class="tabs clearfix">
+					<div class="tabsLeft">
+						<ul>
+							<li><a href="#" class="active">Article</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="article">
+					<h1>In-Game Mechanics</h1>
+					<p class="roleNote">This article is about mechanics in the game.</p>
+					<p>The core <strong>mechanics</strong> in the game can be broken down into six main sub categories: <strong>Colonist mechanics</strong>, <strong>Combat System</strong>,
+             <strong>Building System</strong>, <strong>Crafting System</strong>, <strong>Temperature System</strong>, <strong>Event System</strong>.</p>
+          <!--Contents Panel-->
+					<div class="contentsPanel">
+						<div class="contentsHeader">Contents</div>
+						<ul>
+							<li>
+								<span>1</span><a href="#colonistArticle">Colonist</a>
+								<ul>
+									<li><span>1.1</span><a href="#healthArticle">Health</a></li>
+									<li><span>1.2</span><a href="#hungerArticle">Hunger</a></li>
+									<li><span>1.3</span><a href="#freezingArticle">Freezing</a></li>
+									<li><span>1.4</span><a href="#inventoryArticle">Inventory</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>2</span><a href="#combatSystemArticle">Combat System</a>
+							</li>
+							<li>
+								<span>3</span><a href="#buildingSystemArticle">Building System</a>
+							</li>
+							<li>
+								<span>4</span><a href="#craftingSystemArticle">Crafting System</a>
+							</li>
+							<li>
+								<span>5</span><a href="#temperatureSystemArticle">Temperature System</a>
+								<ul>
+									<li><span>5.1</span><a href="#temperatureArticle">Temperature Mode</a></li>
+									<li><span>5.2</span><a href="#temperatureHeatingArticle">Temperature Heating</a></li>
+									<li><span>5.3</span><a href="#temperatureSpreadArticle">Temperature Spread</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>6</span><a href="#eventSystemArticle">Event System</a>
+								<ul>
+									<li><span>6.1</span><a href="#eventArticle">Game Events</a></li>
+									<li><span>6.2</span><a href="#randomEventsArticle">Random Events</a></li>
+									<li><span>6.3</span><a href="#eventTypesArticle">Event Types</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+          <!--Articles-->
+          <!--Colonist mechanics-->
+					<div id="colonistArticle">
+						<h2>Colonist mechanics</h2>
+						<div id="healthArticle">
+							<h3>Health</h3>
+              <p>Health is the game measurement of a colonist's damage allowance which starts at 100 and when it reaches 0 the colonist is dead.</p>
+						</div>
+						<div id="hungerArticle">
+							<h3>Hunger</h3>
+  						<div class="articleRight">
+  							<div class="articleRightInner">
+  								<img src="img/mechanics/hunger.png" alt="hunger" />
+  							</div>
+  						</div>
+              <p>Every colonists' hunger will increase by 1 every 8 seconds and when their hunger reaches 5 (max hunger) they will try to eat 1 food.
+              If a colonist has food they will eat 1 food and heal 5 health but if they have no food in their inventory they will lose 1 health every consecutive hunger increase past the maximum hunger.</p>
+						</div>
+						<div id="freezingArticle">
+							<h3>Freezing</h3>
+  						<div class="articleRight">
+  							<div class="articleRightInner">
+  								<img src="img/mechanics/freeze.png" alt="freeze" />
+  							</div>
+  						</div>
+              <p>Every colonists' has a minimum comfortable temperature and when their current temperature is less than this value they will start to freeze losing 1 health every 2 seconds.
+                Whilst freezing colonists will also be more hungry meaning the hunger of the colonists will also increase by 1 every 4.8 seconds.</p>
+						</div>
+						<div id="inventoryArticle">
+							<h3>Inventory</h3>
+              <p>Every colonist has an inventory for them to store resources they have gathered or items they have crafted.</p>
+              <p>If the player has constructed any storages colonists will collect food from food storages when hungry and collect materials for crafting or building from resource specific storages when needed.
+              The collected resources will be eaten or taken to where they are needed.</p>
+						</div>
+					</div>
+          <!--Combat system-->
+					<div id="combatSystemArticle">
+						<h2>Combat System</h2>
+            <div class="articleRight">
+              <div class="articleRightInner">
+                <img src="img/mechanics/combat.png" alt="combat" />
+              </div>
+            </div>
+						<p>A selected colonist can be instructed to build structures from the buildings drop down in the top right of the screen by selecting the appropriate building and selecting build at the target location.</p>
+						<p>Colonists will use any building materials they have stored in storages or on themselves.</p>
+					</div>
+          <!--Building system-->
+					<div id="buildingSystemArticle">
+						<h2>Building System</h2>
+						<p>A selected colonist can be instructed to build structures from the buildings drop down in the top right of the screen by selecting the appropriate building and selecting build at the target location.</p>
+						<p>Colonists will use any building materials they have stored in storages or on themselves.</p>
+					</div>
+          <!--Crafting system-->
+					<div id="craftingSystemArticle">
+						<h2>Crafting System</h2>
+						<p>Certain buildings will give options to craft usefull items for the player's colonists, with the selected colonist select the item you wish to craft from the buildings crafting menu.</p>
+            <p>As with building colonists will also use any crafting materials they have in storages or on themselves.</p>
+					</div>
+          <!--Temperature System-->
+					<div id="temperatureSystemArticle">
+						<h2>Temperature System</h2>
+            <div class="articleRight">
+              <div class="articleRightInner">
+                <img src="img/mechanics/temperatureSpread.png" alt="temperature spread" />
+              </div>
+            </div>
+						<div id="temperatureArticle">
+							<h3>Temperature Mode</h3>
+              <p>Temperature in the game is measured in degrees celsius and affects every colonist and game tile in a map. To make this easy to understand Temperature can observed through the games temperature mode and changes
+              can be seen. The player can also inspect a specific tile's temperature by hovering over it with the mouse.</p>
+						</div>
+						<div id="temperatureHeatingArticle">
+							<h3>Temperature Heating</h3>
+              <p>Certain buildings can produce heat in the game like captured towers and campfires. These buildings will heat up the surrounding area's tiles and colonists.</p>
+						</div>
+						<div id="temperatureSpreadArticle">
+							<h3>Temperature Spread</h3>
+              <p>The temperature spread is calculated by adjusting the temperatures of all the tiles every 2 seconds using a formula.</p>
+              <p>Any given tile's temperature = (avg) + ((globalTemperature - (avg)) / 128).</p>
+              <p>Notes: The global temperature starts at -2 degrees celsius and the avg is the average temperature of all the surrounding tiles.</p>
+						</div>
+					</div>
+          <!--Event System-->
+					<div id="eventSystemArticle">
+						<h2>Event System</h2>
+						<div id="eventArticle">
+							<h3>Game Events</h3>
+              <p>Game events are events that could be good (A colonist has joined the players group) or bad (bandit ambush) for the player.</p>
+						</div>
+            <div class="articleRight">
+              <div class="articleRightInner">
+                <img src="img/mechanics/event.png" alt="event" />
+              </div>
+            </div>
+						<div id="randomEventsArticle">
+							<h3>Random Events</h3>
+              <p>The game has a event manager that will try to spawn a random event every 5 minutes. If the requirements for an event are not met the event won't occur, the requirements range from
+                a minimum number of colonists and not spawning entities in water.</p>
+						</div>
+						<div id="eventTypesArticle">
+							<h3>Event Types</h3>
+              <ol>
+                <li>Robot Siege: Spawns a army of robots to capture the player's tower. Number of robots scale with number of colonists.</li>
+                <li>Colonist Arrived: A colonist from teh wilderness will join the player's colony.</li>
+                <li>Merchant Arrived: A traveling merchant has arrived and wants to trade with the player's colonists.</li>
+                <li>Angry bears: Spawns a group of angry bears to attack colonists.</li>
+                <li>Bandit ambush: A group of bandits have sprung an ambush.</li>
+                <li>Robot titan: Robot titans patrolling at the edge of the map.</li>
+                <li>Rogue Robot: Rogue Robots scouting at the edge of the map.</li>
+                <li>Rabbit: A group of rabbits have entered the map.</li>
+              </ol>
+						</div>
+					</div>
+				</div>
+        <!--Footer-->
+				<div class="pagefooter">
+					This page was last edited on 13/04/2020
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
