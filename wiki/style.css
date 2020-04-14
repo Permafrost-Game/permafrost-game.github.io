@@ -612,3 +612,16 @@ span.user {
 		display: none;
 	}
 }
+
+#craftingSystemArticle .row {
+  display: flex;
+}
+
+#craftingSystemArticle .column {
+	flex:100%;
+	max-width: 250px;
+}
+
+#craftingSystemArticle .craftingListItem.column {
+	margin-right: 10%;
+}
